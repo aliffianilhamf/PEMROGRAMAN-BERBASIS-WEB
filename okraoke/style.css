@@ -1,0 +1,219 @@
+/*semua style baik body/paragraf akan diberikan margin 0 dan padding 0,dan text decoration tidak ada*/
+*{
+    text-decoration : none;
+    margin : 0px;
+    padding : 0px;
+}
+/*memastikan di bagian body tidak ada yang terlewat kita kasih lagi margin 0 dan padding 0*/
+body{
+    margin : 0px;
+    padding : 0px;
+    font-family :sans-serif;
+}
+.pembungkus{
+    width : 1100px;
+    margin : auto; /*agar konten berada di tengah*/
+    position : relative;
+}
+.logo a{
+    font-size: 50px; /*ukuran font*/
+    font-weight: 800; /*ketebalan font*/
+    float: left; /* agar konter derada di sebelah kiri*/
+    font-family: courier; /*jenis font*/
+    color: #3D8361; /*warna font*/
+}
+.menu{
+    float: right; /*agar konten berada di sebelah kanan*/
+
+}
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex; /* agar nanti bisa membuat seperti kolom-kolom pada menu nya*/
+    line-height: 80px; /* ketinggian pada konten nav*/
+    position: sticky;
+    top: 0; /* menempel dibagian atas*/
+    background: white;
+    z-index: 1;
+    background: white;
+    border-bottom: 1px solid  #3D8361;
+
+}
+nav ul{
+    list-style-type: none; /* untuk menghilangkan list*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;/* agar tersusun dari sebelah kiri*/
+}
+nav ul li a{
+    color: black;
+    font-weight: bold; /*ketebalan font*/
+    text-align : center; /* agar konten berada di tengah*/
+    padding : 0px 16px 0px 16px; /*atas kanan bawah kiri*/
+    text-decoration: none; /* agar teks tidak memiliki dekorasi misal underline */
+
+}
+nav ul li a:hover{ /*memberrikan style ketika tombol di pencet*/
+    background: #3D8361;
+    color:white;
+    padding: 15px;
+    border-radius: 10px;
+   
+}
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+.kolom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:25px;
+
+}
+.kolom .deskripsi{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color:  #3D8361;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 45px;
+    color:  #3D8361;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 50px;
+}
+a.tbl-hijau{
+    background: #3D8361;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+a.tbl-hijau:hover{
+    background: #67bddc;
+    text-decoration: none;
+}
+p{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+.tbl-biru{
+    background: #67bddc;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tbl-biru:hover{
+    background:  #3D8361;
+    text-decoration: none;
+}
+.tengah{
+    text-align: center;
+    width: 100%;
+}
+.patner-list{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.kartu-patner{
+    width:20%;
+    margin: 0 auto;
+}
+.kartu-patner img{
+    width: 80%;
+    border-radius: 50%;
+}
+.kartu-patner p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    size: 25px;
+    text-align: center;
+    color: #3D8361;
+}
+#kontak{
+    background: #dedede;
+    padding: 50px 0px 50px 0px;
+}
+.footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer-section{
+    width: 20%;
+    margin: 0 auto;
+}
+.footer-section h3{
+    font-family: 'Courier New', Courier,;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:#3D8361;
+    width: 100%;
+    line-height: 50px;
+}
+#copyright{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+    margin-top: 20px;
+}
+    @media screen and (max-width : 991.98px){
+   .pembungkus{
+        width: 90%;
+    }
+
+    .logo a{
+        display:block;
+        width: 100%;
+        text-align: center;
+   }
+
+    nav .menu{
+        width: 100%;
+        margin:0;
+
+    }
+
+    nav .menu ul{
+        text-align: center;
+        margin:auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li{
+        display: inline-block;
+        float: none;
+    }
+
+    section{
+        display: block;
+        
+    }
+    section img{
+        display: block;
+        width: 100%;
+    }
+    .kartu-patner{
+        width: 50%;
+       
+    }
+}
